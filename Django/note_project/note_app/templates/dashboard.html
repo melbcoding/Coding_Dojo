@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  
+</head>
+<body>
+    <div id= "wrapper">
+        <h1>Hello {{user.first_name}} {{user.last_name}}</h1>
+        <div id= "all_notes">
+            {% for note in get_all_notes %}
+                <div class = "note">
+                    <p> {{ note }} </p>
+                </div>
+            {% endfor %}
+        </div>
+        <form id = "new_note" action= "/create" method="POST">
+            {% csrf_token %}
+            <label for="note">New Note</label>
+            <textarea cols="50" rows="10" name="note"></textarea>
+            <button type="submit">Add Note</button>
+        </form>
+    </div>
+</body>
+<script>
+    // You could also put this code in another JavaScript file... Remember to user $(document).ready() if the script tag is included before the DOM nodes you care about...
+    $('form').submit(function(e){
+      // preventDefault stops the default action of the event (e) from being triggered.
+        e.preventDefault();
+        $.ajax({
+    url: /* Where should this go? */,
+    method: /* Which HTTP verb? */,
+    data: /* Any data to send along? */,
+    success: /* What code should we run when the server responds? */        });
+</script>
+</html>

@@ -1,0 +1,27 @@
+*{
+    margin-inline-start: 5px;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+
+
+#searchBar{
+    height: 50px;
+    min-width: 100px;
+    box-shadow: 5px 4px 6px gray;
+    border: solid lightskyblue;
+    border-radius: 20px ;
+    font-size: x-large;
+    text-align: center;
+    outline: none;
+
+}
+

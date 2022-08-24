@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper{
+    /* this is parent to navbar and main-content */
+    display:flex;
+    height: 1060px;
+    width: 1060px;
+    flex-direction: column;
+    margin:auto;
+
+}
+
+#navbar{
+    background-color: black;
+    color:white;
+    height: 200px;
+
+
+}
+
+#login{
+    height:100px;
+    width:100px;
+    background-color: hotpink;
+}
+
+#main-content{
+    height: 900px;
+    width: 900px;
+    /* this is the parent to first-col, second-col */
+    display: flex;
+     /* display flex defaults to flex-direction:row */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.big-box{
+    min-height: 300px;
+    min-width: 300px;
+    border: solid 2px grey;
+    display: flex;
+    flex-direction: column;
+
+}
+.little-box{
+    min-height: 150px;
+    min-width: 150px;
+    border: solid 2px grey;
+    display: flex;
+    flex-direction: column;
+
+}

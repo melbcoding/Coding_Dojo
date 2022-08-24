@@ -1,0 +1,36 @@
+#container{
+    height: 970px;
+    width: 970px;
+    padding: 20px;
+    background-color: blue;
+}
+
+.header{
+    height: 100px;
+    width: 900px;
+    background-color: red;
+    border-radius: 25px;
+}
+
+.side_nav{
+    height: 300px;
+    width: 300px;
+    background-color: teal;
+    border-radius: 25px;
+    display: inline-block
+}
+
+.main_content{
+    height: 600px;
+    width: 400px;
+    background-color: black;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.footer{
+    height: 100px;
+    width: 900px;
+    background-color: grey;
+    border-radius: 25px;
+}
